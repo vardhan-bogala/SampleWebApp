@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeatWave 2026 | Andhra Loyola Engineering College</title>
+
     <style>
         /* Base Styles & Reset */
         * {
@@ -74,8 +75,12 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(11, 12, 16, 1)), 
-                        url('https://unsplash.com') no-repeat center center/cover;
+            background: linear-gradient(
+                rgba(0,0,0,0.7),
+                rgba(11, 12, 16, 1)
+            ),
+            url('https://unsplash.com') no-repeat center center/cover;
+
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -106,6 +111,18 @@
             margin-bottom: 20px;
         }
 
+        /* Creator Name */
+        .creator-name {
+            font-size: 1rem;
+            color: #66fcf1;
+            margin-bottom: 20px;
+        }
+
+        .creator-name strong {
+            color: #fff;
+        }
+
+        /* Button */
         .btn {
             background-color: #66fcf1;
             color: #0b0c10;
@@ -151,7 +168,10 @@
         /* Schedule / Line-up timeline */
         .timeline {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(280px, 1fr)
+            );
             gap: 25px;
         }
 
@@ -192,7 +212,8 @@
             font-size: 0.9rem;
         }
 
-        .form-group input, .form-group select {
+        .form-group input,
+        .form-group select {
             width: 100%;
             padding: 12px;
             background-color: #0b0c10;
@@ -202,7 +223,8 @@
             font-size: 1rem;
         }
 
-        .form-group input:focus, .form-group select:focus {
+        .form-group input:focus,
+        .form-group select:focus {
             outline: none;
             border-color: #66fcf1;
             box-shadow: 0 0 8px rgba(102, 252, 241, 0.4);
@@ -217,88 +239,283 @@
             font-size: 0.9rem;
         }
 
+        .footer-name {
+            color: #66fcf1;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-links { display: none; } /* Kept simple for raw static layout */
-            .hero h1 { font-size: 2.2rem; }
-            .section-title { font-size: 1.8rem; }
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header Navigation -->
     <header>
         <nav class="nav-container">
-            <div class="logo">BEAT<span class="highlight">WAVE'26</span></div>
+
+            <div class="logo">
+                BEAT<span class="highlight">WAVE'26</span>
+            </div>
+
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#register">Register</a></li>
             </ul>
+
         </nav>
     </header>
 
+
     <!-- Hero / Welcome Section -->
     <section id="home" class="hero">
-        <p class="college-title">DATA SCIENCE, Vijayawada</p>
-        <h1>Feel The <span class="highlight">Rhythm</span></h1>
-        <p>Join us for the grandest inter-collegiate music festival of the year. Witness electrifying live performances, competitive battle of bands, and soothing acoustic sets.</p>
-        <p style="margin-bottom: 25px; font-weight: bold; color: #66fcf1;">📅 October 24, 2026 | 📍 Open Air Auditorium</p>
-        <a href="#register" class="btn">Secure Your Pass</a>
+
+        <p class="college-title">
+            DATA SCIENCE, Vijayawada
+        </p>
+
+        <h1>
+            Feel The <span class="highlight">Rhythm</span>
+        </h1>
+
+        <!-- Your Name -->
+        <p class="creator-name">
+            Created by <strong>Vardhan Kumar Reddy Bogala</strong>
+        </p>
+
+        <p>
+            Join us for the grandest inter-collegiate music festival
+            of the year. Witness electrifying live performances,
+            competitive battle of bands, and soothing acoustic sets.
+        </p>
+
+        <p style="margin-bottom: 25px; font-weight: bold; color: #66fcf1;">
+            📅 October 24, 2026 |
+            📍 Open Air Auditorium
+        </p>
+
+        <a href="#register" class="btn">
+            Secure Your Pass
+        </a>
+
     </section>
+
 
     <!-- Schedule / Timeline Section -->
     <section id="schedule">
-        <h2 class="section-title">Event <span class="highlight">Schedule</span></h2>
+
+        <h2 class="section-title">
+            Event <span class="highlight">Schedule</span>
+        </h2>
+
         <div class="timeline">
+
             <div class="timeline-card">
-                <span class="time">09:30 AM - 10:30 AM</span>
-                <h3>Inauguration Ceremony</h3>
-                <p>Welcome address by the management, classical prayer song invocation, and lighting of the lamp.</p>
+                <span class="time">
+                    09:30 AM - 10:30 AM
+                </span>
+
+                <h3>
+                    Inauguration Ceremony
+                </h3>
+
+                <p>
+                    Welcome address by the management,
+                    classical prayer song invocation,
+                    and lighting of the lamp.
+                </p>
             </div>
+
+
             <div class="timeline-card">
-                <span class="time">10:45 AM - 01:00 PM</span>
-                <h3>Voice of Loyola (Solo)</h3>
-                <p>Eastern and Western solo singing competition showcasing fine voices from various engineering branches.</p>
+                <span class="time">
+                    10:45 AM - 01:00 PM
+                </span>
+
+                <h3>
+                    Voice of Loyola (Solo)
+                </h3>
+
+                <p>
+                    Eastern and Western solo singing competition
+                    showcasing fine voices from various
+                    engineering branches.
+                </p>
             </div>
+
+
             <div class="timeline-card">
-                <span class="time">02:00 PM - 04:30 PM</span>
-                <h3>Battle of the Bands</h3>
-                <p>High-octane rock and fusion band showdowns competing for the ultimate cash prize pool.</p>
+                <span class="time">
+                    02:00 PM - 04:30 PM
+                </span>
+
+                <h3>
+                    Battle of the Bands
+                </h3>
+
+                <p>
+                    High-octane rock and fusion band showdowns
+                    competing for the ultimate cash prize pool.
+                </p>
             </div>
+
+
             <div class="timeline-card">
-                <span class="time">05:00 PM - 07:30 PM</span>
-                <h3>DJ Night & EDM Fest</h3>
-                <p>The final closure acts featuring popular guest DJs to set the dance floor ablaze.</p>
+                <span class="time">
+                    05:00 PM - 07:30 PM
+                </span>
+
+                <h3>
+                    DJ Night & EDM Fest
+                </h3>
+
+                <p>
+                    The final closure acts featuring popular guest
+                    DJs to set the dance floor ablaze.
+                </p>
             </div>
+
         </div>
+
     </section>
+
 
     <!-- Registration Form Section -->
     <section id="register">
-        <h2 class="section-title">Registration <span class="highlight">Portal</span></h2>
+
+        <h2 class="section-title">
+            Registration <span class="highlight">Portal</span>
+        </h2>
+
         <div class="registration">
-            <form action="#" method="POST" onsubmit="alert('Thank you for registering! See you at BeatWave.'); return false;">
+
+            <form
+                action="#"
+                method="POST"
+                onsubmit="alert('Thank you for registering! See you at BeatWave.'); return false;"
+            >
+
                 <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" required placeholder="Enter your full name">
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        required
+                        placeholder="Enter your full name"
+                    >
                 </div>
+
+
                 <div class="form-group">
-                    <label for="email">College Email Address</label>
-                    <input type="email" id="email" required placeholder="example@aliet.ac.in">
+                    <label for="email">
+                        College Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        required
+                        placeholder="example@aliet.ac.in"
+                    >
                 </div>
+
+
                 <div class="form-group">
-                    <label for="roll">Roll Number / Registration ID</label>
-                    <input type="text" id="roll" required placeholder="e.g., 22981A05XX">
+                    <label for="roll">
+                        Roll Number / Registration ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="roll"
+                        required
+                        placeholder="e.g., 22981A05XX"
+                    >
                 </div>
+
+
                 <div class="form-group">
-                    <label for="department">Department</label>
+                    <label for="department">
+                        Department
+                    </label>
+
                     <select id="department" required>
-                        <option value="">Select your branch</option>
-                        <option value="CSE">Computer Science & Engineering (CSE)</option>
-                        <option value="ECE">Electronics & Communication (ECE)</option>
-                        <option value="EEE">Electrical & Electronics (EEE)</option>
-                        <option value="MECH">Mechanical Engineering</option>
-                        <option value="CIVIL">Civil Engineering</option>
-                        <option value="IT">Information Technology</option>
+
+                        <option value="">
+                            Select your branch
+                        </option>
+
+                        <option value="CSE">
+                            Computer Science & Engineering (CSE)
+                        </option>
+
+                        <option value="ECE">
+                            Electronics & Communication (ECE)
+                        </option>
+
+                        <option value="EEE">
+                            Electrical & Electronics (EEE)
+                        </option>
+
+                        <option value="MECH">
+                            Mechanical Engineering
+                        </option>
+
+                        <option value="CIVIL">
+                            Civil Engineering
+                        </option>
+
+                        <option value="IT">
+                            Information Technology
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <button type="submit" class="btn">
+                    Register Now
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 BeatWave | Andhra Loyola Engineering College
+        </p>
+
+        <p class="footer-name">
+            Designed & Developed by
+            <strong>Vardhan Kumar Reddy Bogala</strong>
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
